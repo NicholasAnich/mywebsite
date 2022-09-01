@@ -3,24 +3,74 @@
 }
 
 body {
-  margin: 0;
+  background-color: black;
 }
 
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  width: 100%;
-  background-color: #333;
+.background-container { 
+  margin: 0 auto;
+  height: 75vh;
+  width: 75vw;
+  background-image: linear-gradient(blue, black);
+  border: 3px solid white;
+  border-radius: 5px;
+  z-index: 0;
+}
+
+h1 {
   color: white;
-  padding: 0 .5rem;
 }
 
-.nav-bar-list {
+.card {
   display: flex;
-  list-style: none;
+  gap: 10px;
+  margin: 10px;
 }
 
-.nav-bar-item {
-  padding-left: 1em;
+.card p {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+}
+
+.container-char {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.container-char span {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.char-meta {
+  font-weight: bold;
+  color: #00E6E6;
+}
+
+.level,
+.limit {
+  width: 150px;
+  height: 10px;
+  background-color: #565656;
+  box-shadow: 1px 1px 1px black; 
+}
+
+.level-bar,
+.limit-bar {
+  height: 10px;
+}
+
+.level-bar {
+  width: 50%;
+  background-image: linear-gradient(#EB9A9A, #B26363);
+}
+
+.limit-bar {
+  width: 50%;
+  background-color: aliceblue;
+}
+
+.level-text {
+  
 }
