@@ -36,11 +36,11 @@ h1 {
   flex-direction: column;
   justify-content: center;
   color: white;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .container-char-meta {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   color: white;
@@ -61,7 +61,7 @@ h1 {
 .container-char-level-limit {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   justify-content: center;
 }
 
@@ -93,21 +93,41 @@ h1 {
   margin: 0;
 }
 
-.health-bar,
+.hp-bar,
 .mp-bar
 {
   height: 3px;
+  width: 100px;
   background-color: black;
+}
+
+.hp-bar {
+  background-image: linear-gradient(#0689F2, #B1BCC1);
 }
 
 .mp-bar {
   background-image: linear-gradient(#0AE479, #B1BCC1);
 }
 
-.parent-container-mp {
+.parent-container-mp,
+.parent-container-hp {
   display: flex;
+  justify-content: space-between;
 }
 
-.container-mp {
-  border: 1px solid black;
+.container-mp,
+.container-hp {
+  /* border: 1px solid black; */
+  text-align: right;
+}
+
+
+.character-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.bars {
+  display: flex;
+  gap: 10px;
 }

@@ -2,6 +2,9 @@ import React from "react";
 import vincent from "../images/Vincent_Portrait.webp";
 import cloud from "../images/Cloud_Portrait.webp";
 import zack from "../images/zack-fair.jpeg";
+import MagicBars from "./MagicBars";
+import LevelBars from "./LevelBars";
+import Portrait from "./Portrait";
 
 function CharacterCards() {
   const characters = [
@@ -33,40 +36,12 @@ function CharacterCards() {
 
   return (
     <div className="card character">
-      <img
-        // src={cloud}
-        src={vincent}
-        alt="Cloud Strife Portrait"
-        width={"auto"}
-        height={170}
-      />
-      <div className="container-char">
-        <p>Nick</p>
-        <div className="container-char-meta">
-          <span>
-            <span className="char-meta">LV </span>15
-          </span>
-          <span>
-            <span className="char-meta">HP </span>498 / 498
-            <div className="health-bar"></div>
-          </span>
-          <span className="parent-container-mp">
-            <span className="char-meta">MP </span>
-            <div className="container-mp">
-              <span>111 / 111</span>
-              <div className="mp-bar"></div>
-            </div>
-          </span>
-        </div>
-      </div>
-      <div className="container-char-level-limit">
-        <p className="level-text">next level</p>
-        <div className="level">
-          <div className="level-bar"></div>
-        </div>
-        <p className="level-text">Limit level 1</p>
-        <div className="limit">
-          <div className="limit-bar"></div>
+      <Portrait />
+      <div className="character-details">
+        <p>Nicholas Anich</p>
+        <div className="bars">
+          <MagicBars />
+          <LevelBars />
         </div>
       </div>
     </div>
