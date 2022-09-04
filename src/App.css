@@ -13,7 +13,6 @@ body {
   background-image: linear-gradient(blue, black);
   border: 3px solid white;
   border-radius: 5px;
-  z-index: 0;
 }
 
 h1 {
@@ -35,7 +34,17 @@ h1 {
 .container-char {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   color: white;
+  border: 1px solid black;
+}
+
+.container-char-meta {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
 }
 
 .container-char span {
@@ -46,19 +55,28 @@ h1 {
 .char-meta {
   font-weight: bold;
   color: #00E6E6;
+  /* border: 1px solid orange;*/
+}
+
+.container-char-level-limit {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  justify-content: center;
 }
 
 .level,
 .limit {
   width: 150px;
-  height: 10px;
+  height: 13px;
   background-color: #565656;
   box-shadow: 1px 1px 1px black; 
+  border: 1px solid white;
 }
 
 .level-bar,
 .limit-bar {
-  height: 10px;
+  height: 11px;
 }
 
 .level-bar {
@@ -72,5 +90,24 @@ h1 {
 }
 
 .level-text {
-  
+  margin: 0;
+}
+
+.health-bar,
+.mp-bar
+{
+  height: 3px;
+  background-color: black;
+}
+
+.mp-bar {
+  background-image: linear-gradient(#0AE479, #B1BCC1);
+}
+
+.parent-container-mp {
+  display: flex;
+}
+
+.container-mp {
+  border: 1px solid black;
 }
