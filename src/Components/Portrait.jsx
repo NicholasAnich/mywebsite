@@ -3,9 +3,7 @@ import vincent from "../images/Vincent_Portrait.webp"
 
 function Portrait() {
   return (
-    // <div>Portrait</div>
     <img
-      // src={cloud}
       src={vincent}
       alt="Cloud Strife Portrait"
       width={"auto"}

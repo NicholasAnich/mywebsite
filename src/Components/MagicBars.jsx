@@ -11,7 +11,7 @@ function MagicBars() {
         <span className="parent-container-hp">
             <span className="char-meta">HP </span>
             <div className="container-hp">
-              <span className="char-stat-numbers">1522/ 1522</span>
+              <span>1522/ 1522</span>
               <div className="hp-bar"></div>
             </div>
         </span>

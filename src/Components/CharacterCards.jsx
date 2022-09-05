@@ -1,7 +1,4 @@
 import React from "react";
-import vincent from "../images/Vincent_Portrait.webp";
-import cloud from "../images/Cloud_Portrait.webp";
-import zack from "../images/zack-fair.jpeg";
 import MagicBars from "./MagicBars";
 import LevelBars from "./LevelBars";
 import Portrait from "./Portrait";
@@ -38,7 +35,7 @@ function CharacterCards() {
     <div className="card character">
       <Portrait />
       <div className="character-details">
-        <p>Nicholas Anich</p>
+        <span className="author">Nick</span>
         <div className="bars">
           <MagicBars />
           <LevelBars />

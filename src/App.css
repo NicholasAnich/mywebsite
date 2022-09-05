@@ -19,6 +19,7 @@ h1 {
   color: white;
 }
 
+
 .card {
   display: flex;
   gap: 10px;
@@ -52,6 +53,11 @@ h1 {
   font-size: 1.3rem;
 }
 
+.author {
+  margin: 0;
+  color: white;
+  font-size: 1.5rem;
+}
 .char-meta {
   font-weight: bold;
   color: #00E6E6;
