@@ -1,14 +1,16 @@
 import React from "react";
-import vincent from "../images/Vincent_Portrait.webp"
+import vincent from "../images/Vincent_Portrait.webp";
 
 function Portrait() {
   return (
-    <img
-      src={vincent}
-      alt="Cloud Strife Portrait"
-      width={"auto"}
-      height={170}
-    />
+    <div className="img-wrapper">
+      <img
+        src={vincent}
+        alt="Cloud Strife Portrait"
+        width={"auto"}
+        height={170}
+      />
+    </div>
   );
 }
 
